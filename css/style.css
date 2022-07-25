@@ -1,0 +1,145 @@
+/* import poppins font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* general setup for the main page */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main div */
+.main{
+    width: 100%;
+    height: 100vh; /* take the 100 % of the page height*/
+    display: flex;
+    overflow: hidden;
+}
+
+/* left side of page */
+.left-col{
+    flex-basis: 50%;
+    background: rgb(250, 127, 164);
+    position: relative;
+    color: #fff;
+}
+
+/* logo */
+.logo{
+    width: 150px;
+    margin: 30px 80px;
+}
+
+/* content box div */
+.content-box{
+    width: 290px;
+    position: absolute; /*used cz the father is relative*/
+    top: 170px;
+    left: 80px;
+}
+
+.content-box h1{
+    font-size: 45px;
+}
+
+.content-box p{
+    font-size: 14px;
+    color: #dfd1d1;
+    margin-bottom: 50px;
+}
+
+.content-box button{
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 13px 25px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.content-box button img{
+    width: 35px;
+    margin-left: 20px;
+}
+
+/* left arrow */
+.left-arrow{
+    width: 75px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* right side of page */
+.right-col{
+    flex-basis: 50%;
+    background: #fff;
+    position: relative;
+    color: #555;
+}
+
+/* navbar */
+.nav-bar{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+.nav-bar ul li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.nav-bar ul li a img{
+    width: 20px;
+    margin-left: 15px;
+}
+
+/* items */
+.more-item{
+    width: 220px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+.more-item img{
+    width: 200px;
+    margin: 10px 400px;
+}
+
+/* right arrow */
+.right-arrow{
+    width: 75px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    cursor: pointer;
+}
+
+/* middle image bog one */
+.main-img{
+    width: 420px;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -45%);
+}
